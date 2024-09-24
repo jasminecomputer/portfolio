@@ -7,15 +7,14 @@ export default function Page() {
         Jasmine Chen
       </h1>
       <p className="mb-4">
-        {`Hi! I'm a recent MIT grad, where I studied Computation and Cognition. I like 
-        learning about technology, design, and cognition, in no particular order. If you 
+        {`Hi! I'm a recent MIT grad, where I studied Computation and Cognition. I'm originally
+        from San Diego, CA, but now reside in Cambridge, MA. I like technology, design, 
+        and cognition, in no particular order. If you 
         have similar interests or would like to know more, please reach out! 
-        Email: chenjas[at]mit[dot]edu 
         `}
       </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
+      <p> {`Email: chenjas[at]mit[dot]edu`}</p>
+      <div className="my-8">{/* <BlogPosts />*/}</div>
     </section>
   );
 }
