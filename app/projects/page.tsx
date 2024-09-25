@@ -7,7 +7,7 @@ import { ProjectProcesses } from "app/components/posts";
 
 export const metadata = {
   title: "Projects",
-  description: "View my projects.",
+  description: "my projects.",
 };
 
 export default function Page() {

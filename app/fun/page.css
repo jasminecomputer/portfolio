@@ -1,0 +1,39 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.image2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  position: relative;
+  width: 200px; /* Ensure the container has a set width and height */
+  height: 200px;
+  animation: spin 5s linear infinite; /* Spins the whole container */
+}
