@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/projects/4.032FinalProject/(.*)",
+      "dest": "/projects/4.032FinalProject/$1"
+    }
+  ]
+}
