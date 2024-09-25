@@ -27,7 +27,10 @@ export default function Page() {
       />
       {/*<BlogPosts />*/}
       {/*<ProjectProcesses />*/}
-      <div> Amazon Data Project </div>
+      <div>
+        {" "}
+        Amazon Data Project: took my family's Amazon data ranging from 2006-2023
+      </div>
 
       {/*<Script src="./4.032FinalProject/amazonIteration.js" />*/}
       <a

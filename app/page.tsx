@@ -9,11 +9,9 @@ export default function Page() {
       <p className="mb-4">
         {`Hi! I'm Jasmine, and I recently graduated from MIT, where I studied 
         Computation and Cognition. I'm originally
-        from San Diego, CA, but now reside in Cambridge, MA. I created this website 
-        to document some past work and also motivate myself to create more.
-         I am interested in technology, design, 
+        from San Diego, CA, but now reside in Cambridge, MA. 
         and cognition, in no particular order. If you 
-        have similar interests or would like to know more, please reach out! 
+        have similar interests or would like to know more/collaborate, please reach out! 
         `}
       </p>
       <p> {`Email: chenjas[at]mit[dot]edu`}</p>
