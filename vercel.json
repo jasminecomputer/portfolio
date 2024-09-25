@@ -1,8 +1,0 @@
-{
-  "routes": [
-    {
-      "src": "/4.032FinalProject/(.*)",
-      "dest": "/4.032FinalProject/$1"
-    }
-  ]
-}
