@@ -1,5 +1,11 @@
 const getAccessToken = async () => {
+  console.log("SPOTIFY_CLIENT_ID:", process.env.SPOTIFY_CLIENT_ID);
+
   const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;
+
+  if (!refresh_token) {
+    throw new Error("Missing Spotify refresh token.");
+  }
 
   const response = await fetch("https://accounts.spotify.com/api/token", {
     method: "POST",
@@ -14,12 +20,22 @@ const getAccessToken = async () => {
       refresh_token,
     }),
   });
-
+  if (!response.ok) {
+    const errorData = await response.json();
+    console.error("Error getting access token:", errorData);
+    throw new Error(
+      `Failed to fetch access token: ${
+        errorData.error_description || response.statusText
+      }`
+    );
+  }
+  console.log("response line 34", response.json());
   return response.json();
 };
 
 export const topTracks = async () => {
   const { access_token } = await getAccessToken();
+  console.log("access token toptracks", access_token);
   return fetch(
     "https://api.spotify.com/v1/me/top/tracks?time_range=short_term",
     {

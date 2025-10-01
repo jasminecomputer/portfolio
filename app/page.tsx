@@ -7,11 +7,11 @@ export default function Page() {
         Jasmine Chen
       </h1>
       <p className="mb-4">
-        {`Hi! I'm Jasmine, and I recently graduated from MIT, where I studied 
+        {`Hi! I'm Jasmine, and I recently graduated from MIT (May 2024), where I studied 
         Computation and Cognition. I'm originally
         from San Diego, CA, but now reside in Cambridge, MA. I'm interested in technology,
-        design, and cognition, in no particular order. More recently, I've worked on projects 
-        impacting healthcare. If you 
+        design, and cognition, in no particular order. I hope to build things that can lead to better decision-making and wellbeing both at the personal and societal level. More recently, I've worked on projects 
+        impacting healthcare but am always interested in exploring new areas. If you 
         have similar interests or would like to know more/collaborate, please reach out! 
         `}
       </p>
